@@ -151,6 +151,7 @@ MESSAGE_TAGS = {
 }
 
 #Email Setup
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = 'smtp.sendgrid.net'
 EMAIL_FROM_USER = os.environ.get('EMAIL_FROM_USER')
 EMAIL_HOST_USER = 'apikey' # always use this
